@@ -1,0 +1,13 @@
+---
+- name: Install Nextcloud
+  hosts: xxxxxxxxx
+  remote_user: centos
+  become: true
+
+  roles:
+    - common
+    - nc-httpd
+    - nc-php
+    - nc-sql
+    - nextcloud
+...
