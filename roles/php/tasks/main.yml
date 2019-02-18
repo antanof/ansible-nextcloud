@@ -27,6 +27,7 @@
   file:
     src: phpinfo.php
     dest: /var/www/html/phpinfo.php
+    state: touch
   notify: restart httpd
 
 - name: PHP Installed Starting
